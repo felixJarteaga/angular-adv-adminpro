@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from "@angular/router";
-import { FormsModule } from "@angular/forms";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 
 // Modulos
@@ -15,6 +15,7 @@ import { PagesComponent } from './pages.component';
 import { AccountSettingComponent } from './account-setting/account-setting.component';
 import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponentt } from './rxjs/rxjs.component';
+import { PerfilComponent } from './perfil/perfil.component';
 
 
 @NgModule({
@@ -26,10 +27,12 @@ import { RxjsComponentt } from './rxjs/rxjs.component';
     AccountSettingComponent,
     PromesasComponent,
     RxjsComponentt,
+    PerfilComponent,
   ],
   imports: [ 
     CommonModule, 
-    FormsModule, 
+    FormsModule,
+     ReactiveFormsModule,
     SharedModule,
      RouterModule,
      ComponentsModule,
