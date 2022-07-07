@@ -46,7 +46,7 @@ export class PerfilComponent implements OnInit {
               );
             }
             
-            cambiarImagen( e:any ){
+ cambiarImagen( e:any ){
     let imagen: File = e.target.files[0]; 
     this.imagenSubir = imagen;
     if (!imagen) {
