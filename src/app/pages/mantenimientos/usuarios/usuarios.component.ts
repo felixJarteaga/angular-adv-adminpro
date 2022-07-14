@@ -69,7 +69,7 @@ export class UsuariosComponent implements OnInit, OnDestroy {
       return this.usuarios = this.usuariosTemp;
     }
     return this.busquedasService.buscar('usuarios', termino)
-          .subscribe( resultados => {
+          .subscribe( (resultados:Usuario[]) => {
             this.usuarios = resultados;
           });
   }
@@ -105,7 +105,6 @@ this.usuarioServices.guardarUsuario(usuario)
 }
 
 abrirModal(usuario:Usuario){
-  console.log(usuario);
   this.modalImagenService.abrirModal('usuarios',usuario.uid,usuario.img);
   
 }

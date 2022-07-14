@@ -12,7 +12,6 @@ export class PromesasComponent implements OnInit {
 
   ngOnInit(): void {
     this.getUsuarios().then( usuarios => {
-      console.log( usuarios );
     });
 
 
